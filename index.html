@@ -21,13 +21,13 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-6">
+            <div class="col-sm-6">
                 <div class="row">
-                    <div class="col-5 d-flex align-items-center justify-content-center">
+                    <div class="col-sm-5 d-flex align-items-center justify-content-center">
                         <div class="card d-flex">
                             <form onsubmit="setPlayer(event)">
                                 <div class="d-flex justify-content-left p-2">
-                                    <input type="text" placeholder="Name" class="w-95"></input>
+                                    <input type="text" placeholder="Name" name="name" class="w-95"></input>
                                     <button type="submit" class="btn btn-success">Submit</button>
                                 </div>
                             </form>
@@ -36,26 +36,25 @@
                             <button onclick="drill()" class="m-2 btn btn-primary">Drill</button>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <img src="https://robohash.org/urmom?set=set2" alt="" class="img-fluid">
+                    <div class="col-sm-4" id="charLinkArea">
                     </div>
-                    <div class="col-3 d-flex align-items-end">
-                        <img src="shovel.png" alt="Shovel" class="img-fluid">
+                    <div class="col-sm-3 d-flex align-items-end" id="toolImageArea">
+                        <img src="shovel.png" alt="Shovel" class="img-fluid hover-rotate-90">
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-6">
                 <div class="row">
-                    <div class="col-6 mt-4">
-                        <img src="https://i.unu.edu/media/ourworld.unu.edu-en/article/8634/The-Surprising-Healing-Qualities-of-Dirt.jpg" alt="Dirt" class="img-fluid img-ground">
+                    <div class="col-sm-6 mt-4" id="groundImageArea">
+                        <img src="https://i.unu.edu/media/ourworld.unu.edu-en/article/8634/The-Surprising-Healing-Qualities-of-Dirt.jpg" alt="Dirt" class="img-fluid rounded-circle">
                     </div>
-                    <div class="col-6 mx-auto mt-3">
+                    <div class="col-sm-6 mx-auto mt-3">
                         <div class="card text-center">
                             <h4>Digging Info: </h4>
                             <div class="text-white">
-                                <p class="m-3 bg-primary p-2 rounded">Depth Dug: </p>
-                                <p class="m-3 bg-primary p-2 rounded">Actions Used: </p>
-                                <p class="m-3 bg-primary p-2 rounded">Ground Type: </p>
+                                <p class="m-3 bg-primary p-2 rounded" id="depthDugArea">Depth Dug: </p>
+                                <p class="m-3 bg-primary p-2 rounded" id="actionsUsedArea">Actions Used: </p>
+                                <p class="m-3 bg-primary p-2 rounded" id="groundTypeArea">Ground Type: </p>
                             </div>
                         </div>
                     </div>

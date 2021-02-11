@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(122, 184, 255);
+    height: 100vh;
+}
+
+.img-ground {
+    border-radius: 75%;
+}
